@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Build artifacts & coverage
+dist/
+coverage/
+*.tsbuildinfo
+
+# Local dev artifacts
+.DS_Store
+*.log

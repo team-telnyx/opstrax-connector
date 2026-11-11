@@ -1,0 +1,12 @@
+name = "opstrax-connector"
+main = "src/index.ts"
+compatibility_date = "2026-05-01"
+
+# No [[actors]] bindings: invoice lookup is read-only and stateless.
+# If caching or an audit trail is added later, prefer KV storage
+# (ctx.storage.put/get) — the actor SQLite sidecar has a known fence-401
+# issue on this account (see skills/steves-edge-actor-skills/SKILL.md §15).
+
+[edge_compute]
+func_id = "b48e8bc3-46c8-4846-a560-0f395cc62996"
+func_name = "opstrax-connector"

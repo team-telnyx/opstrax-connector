@@ -1,0 +1,15 @@
+{
+  "name": "opstrax-connector-edge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Telnyx Edge Function: invoice lookup against OPS Trax for the Hawk Auto Group voice AI agent",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "typescript": "^5.9.0"
+  }
+}
